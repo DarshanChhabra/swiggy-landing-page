@@ -13,8 +13,8 @@ html {
 }
 
 body, html {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
     height: 100%;
     font-weight: 300;
     color: #282c3f;
@@ -124,14 +124,13 @@ navbar {
     font-size: 16px !important;
     height: 40px !important;
     line-height: 40px !important;
-    width: auto ;
+    width: auto;
     border-radius: 0 !important;
 }
 
 .navbutts {
-    float: right;
-    padding-right: 15px;
     padding-top: 25px;
+    display: flex;
 }
 
 .butt1 {
@@ -156,14 +155,17 @@ navbar {
 
 .location {
     display: flex;
-    max-height: 4rem;
-    min-width: 750px;
+    max-height: 3rem;
+    max-width: 750px;
+    overflow: hidden;
 }
 
 .locatebar {
     border: 1px grey solid;
     display: flex;
     justify-content: space-between;
+    min-height: 42px;
+    max-height: 42px;
 }
 
 .locatebar:focus-within {
@@ -174,8 +176,10 @@ navbar {
     border: none;
     margin: none;
     padding-left: 1rem;
-    min-width: 15rem;
+    max-width: 15rem;
     font-weight: bold;
+    width: 15rem;
+    overflow: hidden;
 }
 
 .locatebar input:focus {
@@ -219,6 +223,17 @@ input {
     text-align: center;
 }
 
+.locate {
+    padding:5px;
+    text-decoration: none;
+    color: var(--grey) !important;
+    margin-top:3px;
+}
+
+.locate:hover {
+    color: var(--darker-grey);
+ }
+
 .howtobox 
  {
     padding: 1rem 6rem !important;
@@ -254,8 +269,8 @@ input {
 }
 
 .buttimg {
-    max-width: 180px;
-    max-height: 55px;
+    max-width: 145px !important;
+    max-height: 55px !important;
 }
 
 .social {
@@ -319,15 +334,15 @@ li a:hover {
 
 span[class="animated"]::before {
     content: "Game Night?";
-    animation: animate infinite 30s;
+    animation: show 25s linear infinite;
     padding-left: 10px;
     margin-top: 0px;
-    animation-delay: 0;
 }
-@keyframes animate {
+@keyframes show {
     
     0% {
         content: "Game Night?";
+
     }
 
     25% {
