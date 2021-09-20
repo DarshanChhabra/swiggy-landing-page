@@ -1,0 +1,364 @@
+:root {
+    --lighter-grey : rgb(204, 199, 199);
+    --grey : rgb(151, 142, 142);
+    --darker-grey: rgb(92, 88, 88);
+}
+
+html {
+    box-sizing:  border-box;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: -.5px;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-weight: 300;
+    color: #282c3f;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+.lighter-grey {
+    color: var(--lighter-grey) !important;
+}
+
+.grey {
+    color: var(--grey) !important;
+}
+
+.darker-grey {
+    color: var(--darker-grey) !important;
+}
+
+.m-0{
+    margin: 0 !important;
+}
+
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mt-10 {
+    margin-top: 10px !important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-40 {
+    margin-top: 40px !important;
+}
+
+.mt-120 {
+    margin-top: 120px !important;
+}
+
+.ml-10 {
+    margin-left: 1rem;
+}
+
+.mlr-20 {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px !important;
+    font-weight: 600 !important;
+}
+
+.topboxes {
+    margin-right: 2rem !important;
+}
+
+.topbox1 {
+    padding-left: 5rem !important;
+    font-size: 16px ;
+}
+
+.topbox2 {
+    height:540px;
+    max-height: 540px;
+    margin-top: 0 !important;
+    background-image: url("./images/Lunch.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbrand {
+    overflow: hidden;
+}
+
+.navbrand img {
+    max-width: 175px;
+    max-height: 175px;
+    float: left;
+}
+
+.btn {
+    font-weight: 600 !important;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    padding: 0 2rem !important;
+    font-size: 16px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+    width: auto ;
+    border-radius: 0 !important;
+}
+
+.navbutts {
+    float: right;
+    padding-right: 15px;
+    padding-top: 25px;
+}
+
+.butt1 {
+    color: black !important;
+    background:none;
+    border: none;
+}
+
+.butt1:hover {
+    color: orange !important;
+}
+
+.butt2 {
+    color: white !important;
+    background-color: black !important;
+    border: none;
+}
+
+.butt1:focus {
+    outline: none !important;
+}
+
+.location {
+    display: flex;
+    max-height: 4rem;
+    min-width: 750px;
+}
+
+.locatebar {
+    border: 1px grey solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.locatebar:focus-within {
+    border: 1px orange solid;
+}
+
+.locatebar input {
+    border: none;
+    margin: none;
+    padding-left: 1rem;
+    min-width: 15rem;
+    font-weight: bold;
+}
+
+.locatebar input:focus {
+    outline: none !important;
+}
+
+p a {
+    color: var(--grey) !important;
+    text-decoration: none;
+}
+
+p, p a {
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--grey) !important;
+    text-decoration: none;
+}
+
+.locatebar button:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+input {
+    border: none !important;
+}
+
+.findfood {
+    border: 1px orange solid;
+}
+
+.findfood button {
+    background-color: orange;
+    color: white;
+}
+
+.howto {
+    background-color: rgb(49, 26, 26);
+    color: white !important;
+    text-align: center;
+}
+
+.howtobox 
+ {
+    padding: 1rem 6rem !important;
+ }
+
+.howtobox img {
+    margin: auto;
+    height: 200px;
+    width: 125px;
+}
+
+.howtobox p {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.advertimg {
+    padding: 0 !important;
+    margin-bottom: 0;
+    width:100%;
+}
+
+.advertimg  div {
+    margin:0;
+    padding:0;
+}
+
+.advertimg  div img{
+    aspect-ratio: auto 384 / 450;
+    height: 450px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.buttimg {
+    max-width: 180px;
+    max-height: 55px;
+}
+
+.social {
+    margin-right: 1rem;
+    color:white;
+}
+
+.swiggyfoot {
+    font-size: 18px;
+    margin:0 !important;
+    font-weight: normal;
+}
+
+.footingfoot {
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.logo {
+    width: 142px;
+    height: 42px;
+}
+
+footer {
+    background-color: black;
+    margin: 0 !important;
+    color: white;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+ul,li a {
+    color: white;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin:auto;
+    line-height: 2rem;
+}
+
+li a:hover {
+    color:white !important;
+    font-weight: 500;
+    transform: (1.5);
+}
+
+.appbutton {
+    border: 1px white solid;
+    border-radius: 5%;
+}
+
+ .fa-lg:hover {
+    position: static;
+    font-size: 140%;
+    transition: ease-in;
+}
+
+span[class="animated"]::before {
+    content: "Game Night?";
+    animation: animate infinite 30s;
+    padding-left: 10px;
+    margin-top: 0px;
+    animation-delay: 0;
+}
+@keyframes animate {
+    
+    0% {
+        content: "Game Night?";
+    }
+
+    25% {
+        content: "Late Night at Office?";
+
+    }
+
+    50% {
+        content: "Hungry?";
+
+    }
+
+    75% {
+        content: "Unexpected Guests?";
+
+    }
+
+    100% {
+        content: "Cooking Gone Wrong?";
+ 
+    }
+}
+
+@keyframes FadeOut {
+    from {
+        display: block;
+        opacity: 1.0;
+    }
+
+    to {
+        display: none;
+        opacity: 0;
+    }
+}
